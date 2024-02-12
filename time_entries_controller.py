@@ -1,5 +1,5 @@
 import json
-import requests
+import requests # For http requests
 import csv
 import pandas as pd
 
@@ -7,10 +7,14 @@ def date_formater():
     formated_date = ''
     return formated_date
 
+
+
 class EntriesFetcher:
+    """This class is responsible for fetching time entries from TimeCamp API.
+    """
     def __init__(self):
         self.api_token = '4a3c73ea8861c4d8eeb10ec734'
-        self.entries_url = "https://app.timecamp.com/third_party/api/entries"
+        self.entries_url = "https://app.timecamp.com/third_party/api/entries" # entries endpoint
         self.headers = {
             'Accept': 'application/json',  # change to application/json for json format or csv for csv strings
             'Authorization': 'Bearer 4a3c73ea8861c4d8eeb10ec734'  # Replace with your actual access token
