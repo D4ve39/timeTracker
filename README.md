@@ -59,12 +59,12 @@ For now only use 2 tables, one responsible of all the users (one for now), and a
 ### Users table
 | UserId | Name | Email | Token |  
 | :-----: | :-----: | :-----: | :-----: |
-| 1288 | David | david.knabenhans@gmail.com  | _ |
+| 1288 | David | -------------@gmail.com  | 45651325832556412 |
 
 ### TimeEntries table
-| TimeEntryID | StartDateTime | EndDateTime | UserID |
-| :-----: | :-----: | :-----: | :-----: |
-| 1 | 	2022-01-01 09:00:00 | 	2022-01-01 11:00:00 | 1288 |
+| TimeEntryID | UserID | Date| StartTime | EndTime | Duration | TaskID |
+| :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | 
+| 1 | 1288 |  2022-01-01 | 09:00:00 | 11:45:00 | 9900 | Meeting
 
 ## SQLite 3 to generate the database:
 
